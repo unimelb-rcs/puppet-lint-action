@@ -2,4 +2,4 @@
 
 set -e
 
-sh -c "puppet-lint $*"
+sh -c "puppet-lint --relative $*"
