@@ -14,6 +14,7 @@ LABEL "maintainer"="Scott Brenner <scott@scottbrenner.me>"
 
 RUN apk --no-cache add ruby-json
 RUN gem install puppet-lint --no-document
+RUN gem install puppet-lint-strict_indent-check --no-document
 
 COPY entrypoint.sh /entrypoint.sh
 RUN ["chmod", "+x", "/entrypoint.sh"]
