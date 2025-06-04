@@ -12,7 +12,7 @@ LABEL "com.github.actions.color"="orange"
 
 LABEL "maintainer"="Scott Brenner <scott@scottbrenner.me>"
 
-RUN apk --no-cache add ruby-json
+RUN apk --no-cache add ruby-libs
 RUN gem install puppet-lint --no-document
 RUN gem install puppet-lint-strict_indent-check --no-document
 
